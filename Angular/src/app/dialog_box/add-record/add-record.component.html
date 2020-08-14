@@ -1,0 +1,23 @@
+<div class="div">
+    <form [formGroup] = "addRecordForm" (ngSubmit) = "onSubmit()">
+        <div class="input-div">
+            <input class="input" type="text" placeholder="Student Name" formControlName = "studentName">
+        </div>
+        <div class="select-div">
+            <select class="select" name="sex" id="sex" formControlName = "sex">
+                <option value="" disabled selected>--sex--</option>
+                <option class="option" value="male">male</option>
+                <option class="option" value="female">female</option>
+            </select>
+        </div>
+        <div class="input-div">
+            <input class="input" type="text" placeholder="dd/mm/yyyy" onfocus="(this.type = 'date')" formControlName = "dob">
+        </div>
+        <div class="input-div">
+            <input class="input" type="text" placeholder="Mobile" formControlName = "mobile">
+        </div>
+        <div class="button-div">
+            <button class="button" type="submit">submit</button>
+        </div>
+    </form>
+</div>

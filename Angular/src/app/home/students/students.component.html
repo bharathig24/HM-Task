@@ -1,0 +1,27 @@
+<div class="div">
+    <div class="button-div">
+        <button (click) = "addRecord()" class="button">Add record</button>
+    </div>
+    <div class="table-div">
+        <table>
+            <tr>
+                <th>Student id</th>
+                <th>Student Name</th>
+                <th>Sex</th>
+                <th>DOB</th>
+                <th>Contact number</th>
+            </tr>
+            <ng-container *ngFor = "let student of students">
+                <tr>
+                    <td>{{student.Id}}</td>
+                    <td>{{student.Name}}</td>
+                    <td>{{student.Sex}}</td>
+                    <td>{{student.DOB}}</td>
+                    <td>{{student.Mobile}}</td>
+                </tr>
+            </ng-container>
+        </table>
+    </div>
+</div>
+
+

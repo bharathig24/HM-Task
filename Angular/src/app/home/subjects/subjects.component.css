@@ -1,0 +1,13 @@
+.outer-div{
+    display: flex;
+}
+
+.section{
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+.unit{
+    width: 60%;
+    /* border: 1px solid black; */
+}

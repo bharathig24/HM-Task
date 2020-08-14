@@ -1,0 +1,106 @@
+.background{
+    background-image: url("../../assets/images/class-room.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    height: 100vh;
+}
+/* .body-div{
+    background-color: aqua;
+} */
+.register-outer-div{
+    position: absolute;
+    /* border: 1px solid black; */
+    /* border-radius: 20px; */
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0.8; */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.register-inner-div{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.head-div{
+    margin: 20px 0px;
+}
+
+.head{
+    margin: 0;
+    color: white;
+}
+
+.input-div{
+    padding-top: 20px;
+    /* width: 100%; */
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.input{
+    outline: none;
+    width: 100%;
+    margin: auto;
+    padding: 14px 14px 14px 30px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.button-div{
+    margin: 0px 0px 20px 0px;
+    padding-top: 20px;
+    /* cursor: pointer; */
+}
+
+.button{
+    width: 100%;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    /* border-width: 2px; */
+    border-color: #7A7979 ;
+    font-size: 20px;
+    background-color: #5B5B5B ;
+    color: white;
+    cursor: pointer;
+}
+
+.login-div{
+    margin-bottom: 20px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: #4AA7DF ;
+}
+
+a:hover{
+    color: #F74E5D ;
+}
+
+
+/* ---------------------error message--------------------------- */
+
+.invalid-feedback{
+    color: #D21919;
+    text-align: left;
+    padding-left: 10px;
+}

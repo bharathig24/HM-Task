@@ -1,0 +1,26 @@
+th, td{
+    padding: 0px 0px 24px 10px;
+    vertical-align: top;
+    text-align: left;
+    /* padding-bottom: 24px; */
+}
+
+tr{
+    /* height: 100px; */
+}
+
+.outer-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    height: fit-content;
+    padding-top: 10px 0px 10px 0px;
+    background-color: #EDEDED;
+    /* border: 1px solid black; */
+}
+
+.inner-div{
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}

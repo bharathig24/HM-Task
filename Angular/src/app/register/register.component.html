@@ -1,0 +1,53 @@
+<div class="background"></div>
+<!-- <div class="body-div"> -->
+    <div class="register-outer-div">
+        <div class="register-inner-div">
+            <form [formGroup] = "registerForm" (ngSubmit) = "onSubmit()">
+                <div class="head-div">
+                    <h2 class="head">REGISTER</h2>
+                </div>
+                <div class="input-div">
+                    <input class="input" type="text" placeholder="user name" formControlName = "userName"><br>
+                </div>
+                 <div *ngIf="registerForm.get('userName').invalid && registerForm.get('userName').touched" class="invalid-feedback">
+                        <div *ngIf="registerForm.get('userName').errors?.required">User name is required</div>
+                        <div *ngIf="registerForm.get('userName').invalid && !registerForm.get('userName').errors?.required">Invalid user name</div>
+                    </div>
+                <div class="input-div">
+                    <input class="input" type="text" placeholder="mail id" formControlName = "eMail"><br>
+                    
+                </div>
+                <div *ngIf="registerForm.get('eMail').invalid && registerForm.get('eMail').touched" class="invalid-feedback">
+                    <div *ngIf="registerForm.get('eMail').errors?.required">E-mail is required</div>
+                    <div *ngIf="registerForm.get('eMail').invalid && !registerForm.get('eMail').errors?.required">Invalid e-mail</div>
+                </div>
+                <div class="input-div">
+                    <input class="input" type="password" placeholder="password" formControlName = "password"><br>
+                    
+                </div>
+                <div *ngIf="registerForm.get('password').invalid && registerForm.get('password').touched" class="invalid-feedback">
+                    <div *ngIf="registerForm.get('password').errors?.required">Password is required</div>
+                    <div *ngIf="registerForm.get('password').invalid && !registerForm.get('password').errors?.required">Invalid password</div>
+                </div>
+                <div class="input-div">
+                    <input class="input" type="password" placeholder="confirm password" formControlName = "conPassword"><br>
+                    
+                </div>
+                <div *ngIf="registerForm.get('conPassword').invalid && registerForm.get('conPassword').touched" class="invalid-feedback">
+                    <div *ngIf="registerForm.get('conPassword').errors?.required">Confirm password is required</div>
+                    <div *ngIf="registerForm.get('conPassword').invalid && !registerForm.get('conPassword').errors?.required">Password doesn't match</div>
+                </div>
+                <div class="button-div">
+                    <button type="submit" class="button">register</button>
+                </div>
+                <div>{{feedback}}</div>
+                <div class="login-div">
+                    <p>New user? <a routerLink = "/login">Login</a></p>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+<!-- </div> -->
+
+

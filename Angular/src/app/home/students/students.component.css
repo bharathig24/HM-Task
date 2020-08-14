@@ -1,0 +1,53 @@
+.div{
+    margin: 4vh auto 10vh auto;
+    width: 90%;
+    
+}
+
+.button-div{
+    /* padding-top: 20px;
+    margin: 0px 0px 20px 0px; */
+    float: right;
+}
+
+.button{
+    /* width: 100%; */
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    /* border-width: 2px; */
+    border-color: #7A7979 ;
+    font-size: 14px;
+    background-color: #5B5B5B ;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.table-div{
+    /* display: block; */
+}
+
+table, th, tr, td{
+    border-bottom: 1.5px solid #C4C4C4;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    /* width: 100%; */
+    width: 100%;
+    display: inline-table;
+    margin: 2vh auto 10vh auto;
+}
+
+tr{
+    height: 50px;
+}
+
+tr:hover{
+    background-color: #EDEDED;
+}
+
+th{
+    background-color: #C1C0C0;
+}

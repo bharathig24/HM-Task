@@ -1,0 +1,31 @@
+<div class="background"></div>
+<!-- <div class="body-div"> -->
+    <div class="login-outer-div">
+        <div class="login-inner-div">
+            <form [formGroup] = "loginForm" (ngSubmit) = "login()">
+                <div class="head-div">
+                    <h2 class="head">LOGIN</h2>
+                </div>
+                <div class="input-div">
+                    <input class="input" type="text" placeholder="user name" formControlName = "userName"><br>
+                </div>
+                <!-- <div *ngIf="loginForm.get('userName').invalid && loginForm.get('userName').touched" class="invalid-feedback"> -->
+                    <div *ngIf="loginForm.get('userName').errors?.required && loginForm.get('userName').touched" class="invalid-feedback">User name is required</div>
+                    <!-- <div *ngIf="loginForm.get('userName').invalid && !loginForm.get('userName').errors?.required">Invalid user name</div> -->
+                <!-- </div> -->
+                <div class="input-div">
+                    <input class="input" type="password" placeholder="password" formControlName = "password"><br>
+                </div>
+                <div *ngIf="loginForm.get('password').errors?.required && loginForm.get('password').touched" class="invalid-feedback">Password is required</div>
+                <div class="button-div">
+                    <button type="submit" class="button">login</button>
+                </div>
+                <div class="register-div">
+                    <p>New user? <a routerLink = "/register">Register</a></p>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+<!-- </div> -->
+
